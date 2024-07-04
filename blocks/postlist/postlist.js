@@ -11,7 +11,7 @@ export default async function decorate(block) {
     let resultHTML = "";
     blogPage.forEach( function(value, index, array) {
         console.log(value.image);
-        console.log(array[index][title]);
+        console.log(array[index]);
         resultHTML += `(${index} - ${value.title}) <br>`;
     });
 
