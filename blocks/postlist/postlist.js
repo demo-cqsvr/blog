@@ -10,7 +10,7 @@ export default async function decorate(block) {
 
     let resultHTML = "";
     blogPage.forEach( function(value, index, array) {
-        resultHTML += `(${index} - ${value}) <br>`;
+        resultHTML += `(${index} - ${value.title}) <br>`;
     });
 
     block.innerHTML = `<em> Postlist json: ${path} <br> ${blogPage}</em><br> ${resultHTML}`;
