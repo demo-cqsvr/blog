@@ -12,7 +12,7 @@ export default async function decorate(block) {
     blogPage.forEach( function(value, index, array) {
         console.log(value.image);
         console.log(array[index]);
-        resultHTML += `<li>(${index} - ${value.title} <br><img src="${value.image}">) </li>`;
+        resultHTML += `<li>${index} - <a href="${value.path}"><em>${value.title} </em><img src="${value.image}"></a> </li>`;
     });
     resultHTML += "</ul>";
 
