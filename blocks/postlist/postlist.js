@@ -4,8 +4,11 @@ export default async function decorate(block) {
     const link = block.querySelector('a');
     const path = link ? link.getAttribute('href') : block.textContent.trim();
 
-    const postList = await ffetch(path);
-    console.log( postList );
+    const blogPage = await ffetch(path).sheet('nav').first();
+    console.log( blogPage );
+
+    const blogPage2 = await ffetch(path).sheet('raw_index').first();
+    console.log( blogPage2 );
 
     block.innerHTML = `<em> postlist json: ${path} <br> ${postList}</em>`;
 }
