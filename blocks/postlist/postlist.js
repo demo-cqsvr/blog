@@ -1,6 +1,6 @@
 import ffetch from '../../scripts/ffetch.js';
 
-var resultObj = "";
+export let resultObj;
 export default async function decorate(block) {
     const link = block.querySelector('a');
     const path = link ? link.getAttribute('href') : block.textContent.trim();
