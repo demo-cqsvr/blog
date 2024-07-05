@@ -4,7 +4,7 @@ export default async function decorate(block) {
     const link = block.querySelector('a');
     const path = link ? link.getAttribute('href') : block.textContent.trim();
 
-    console.log("blog page all:")
+    console.log("blog page all:"+path);
     const blogPage = await ffetch(path).limit(2).all();
     console.log( blogPage );
 
