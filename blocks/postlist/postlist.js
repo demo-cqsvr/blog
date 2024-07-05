@@ -10,7 +10,7 @@ export default async function decorate(block) {
     const limit_num = limit ? limit.getAttribute('id'):"100";
     console.log("limit num:"+ limit_num);
 
-    const blogPage = await ffetch(path).limit(paseInt(limit_num)).all();
+    const blogPage = await ffetch(path).limit(parseInt(limit_num)).all();
     console.log( blogPage );
 
     let resultHTML = "<ul>";
