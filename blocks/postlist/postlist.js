@@ -5,6 +5,11 @@ export default async function decorate(block) {
     const path = link ? link.getAttribute('href') : block.textContent.trim();
 
     console.log("blog page all:"+path);
+
+    const limit = block.querySelector('h1');
+    const limit_num = limit ? limit.getAttribute('id');
+    console.log("limit num:"+ limit_num);
+
     const blogPage = await ffetch(path).limit(2).all();
     console.log( blogPage );
 
