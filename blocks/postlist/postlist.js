@@ -16,5 +16,5 @@ export default async function decorate(block) {
     });
     resultHTML += "</ul>";
 
-    block.innerHTML = `<em> Postlist json: ${path} <br> ${blogPage}</em><br> ${resultHTML}`;
+    // block.innerHTML = `<em> Postlist json: ${path} <br> ${blogPage}</em><br> ${resultHTML}`;
 }
