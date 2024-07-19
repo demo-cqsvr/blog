@@ -1,3 +1,8 @@
+.balltouch-wrapper {
+    height: 60vh;
+    overflow: scroll;
+}
+
 .balltouch {
     max-width: 300px;
     height: 300px;
