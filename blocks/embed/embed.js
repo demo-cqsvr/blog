@@ -89,7 +89,8 @@ const loadScript = (url, callback, type) => {
   
   export default function decorate(block) {
     const placeholder = block.querySelector('picture');
-    const link = block.querySelector('a').href;
+    //const link = block.querySelector('a').href;
+    const link = block.querySelector('a').href.replace("shorts","embed"); // for shorts youtube
     block.textContent = '';
   
     if (placeholder) {
@@ -111,4 +112,3 @@ const loadScript = (url, callback, type) => {
       observer.observe(block);
     }
   }
-  
