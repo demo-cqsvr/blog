@@ -4,12 +4,11 @@ export default async function decorate(block) {
     console.log(" --- marubatsu ---");
     const maru_batsu = block.querySelectorAll('p');
     console.log( maru_batsu );
-    maru_batsu.forEach((box) => {
-        box.style.color = 'red';
-        box.classList.add('done');
-        if(box.textContent=="1") box.style.color="blue";
-        
-      });
+    maru_batsu.forEach((elm) => {
+      elm.style.color = 'red';
+      elm.classList.add('done');
+      if(elm.textContent=="1") elm.style.color="blue";    
+    });
 
 
     // const path = link ? link.getAttribute('href') : block.textContent.trim();
