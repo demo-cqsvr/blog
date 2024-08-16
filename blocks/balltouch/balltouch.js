@@ -6,8 +6,10 @@ export default async function decorate(block) {
     console.log( maru_batsu );
     maru_batsu.forEach((elm) => {
       elm.style.color = 'red';
-      elm.classList.add('done');
-      if(elm.textContent=="1") elm.style.color="blue";    
+      if(elm.textContent=="1") {
+        elm.style.color="blue";
+        elm.classList.add('done');
+      }    
     });
 
 
