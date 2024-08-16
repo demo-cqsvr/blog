@@ -6,6 +6,7 @@ export default async function decorate(block) {
     console.log( maru_batsu );
     maru_batsu.forEach((box) => {
         box.style.color = 'red';
+        if(box.textContent=="1") box.style.color="blue";
       });
 
 
