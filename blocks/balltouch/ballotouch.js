@@ -1,7 +1,9 @@
 import ffetch from '../../scripts/ffetch.js';
 
 export default async function decorate(block) {
+    console.log(" --- marubatsu ---");
     const maru_batsu = block.querySelectorAll('p');
+    console.log( maru_batsu );
     maru_batsu.forEach((box) => {
         box.style.color = 'red';
       });
