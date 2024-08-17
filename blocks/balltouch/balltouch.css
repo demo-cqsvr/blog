@@ -41,7 +41,7 @@
 
         >div:first-child {
             position: sticky;
-            min-width: 25vh !important;
+            min-width: 25vw !important;
 
             top: 0;
             left: 0;
