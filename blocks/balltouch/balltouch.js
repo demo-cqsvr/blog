@@ -102,7 +102,7 @@ export default async function decorate(block) {
     const ytlinks = block.querySelectorAll('a');
     console.log( ytlinks );
     ytlinks.forEach((link)=> {
-      const path = link ? link.getAttribute('href') : "NO-LINK";
+      const path = link ? link.getAttribute('href').replace("shorts","embed") : "NO-LINK";
       console.log(`link: ${path}`);
 
       // linkが画面内に入った場合
