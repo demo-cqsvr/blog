@@ -109,7 +109,7 @@ export default async function decorate(block) {
       const observer = new IntersectionObserver((entries) => {
         if (entries.some((e) => e.isIntersecting)) {
           observer.disconnect();
-          loadEmbed(link, link);
+          loadEmbed(link, path);
         }
       });
       observer.observe(link);
