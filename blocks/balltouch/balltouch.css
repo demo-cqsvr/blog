@@ -63,6 +63,11 @@
             border-left: none;
             border-right: none;
 
+            >p {
+                margin: 0px;
+                padding: 0px;
+            }
+
         }
 
         >div:first-child::before {
