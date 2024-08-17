@@ -42,7 +42,7 @@
         >div:first-child {
             position: sticky;
             min-width: 25vw !important;
-
+            max-width: 25vw !important;
             top: 0;
             left: 0;
             background: none;
@@ -122,8 +122,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            /* width: 100%;
-            height: 100%; */
+            width: 100%;
+            height: 100%;
             border-top: 1px solid #000;
             border-bottom: 1px solid #000;
             border-left: 1px solid #000;
