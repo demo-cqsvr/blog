@@ -47,6 +47,7 @@
             position: sticky;
             min-width: 50vw !important;
             max-width: 50vw !important;
+            padding: 0px !important;
             top: 0;
             left: 0;
             background: none;
