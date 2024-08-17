@@ -12,15 +12,22 @@ export default async function decorate(block) {
       }    
     });
 
+    // Youtube link to embed
+    console.log(" --- Youtube Links ---");
+    const ytlinks = block.querySelectorAll('a');
+    console.log( ytlinks );
+    ytlinks.forEach((link)=> {
+      const path = link ? link.getAttribute('href') : "NO-LINK";
+      console.log(`link: ${path}`);
+    });
+
+
 
     // const path = link ? link.getAttribute('href') : block.textContent.trim();
-
     // console.log("blog page all:"+path);
-
     // const limit = block.querySelector('h1');
     // const limit_num = limit ? limit.getAttribute('id'):"100";
     // console.log("limit num:"+ limit_num);
-
     // const blogPage = await ffetch(path).limit(parseInt(limit_num)).all();
     // console.log( blogPage );
 
