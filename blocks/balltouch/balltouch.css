@@ -45,8 +45,8 @@
 
         >div:first-child {
             position: sticky;
-            min-width: 50vw !important;
-            max-width: 50vw !important;
+            min-width: 60vw !important;
+            max-width: 60vw !important;
             padding: 0px !important;
             top: 0;
             left: 0;
