@@ -3,9 +3,12 @@
     overflow: scroll;
 }
 
+.balltouch-container {
+    padding: 0;
+}
+
 .balltouch {
     max-width: 100vw;
-    padding: 0;
     /* height: 300px; */
     overflow-x: auto;
     overflow-y: auto;
